@@ -48,9 +48,42 @@ function pokemonAttacked(pokeArray) {
 //it should then use "this.hp- number" 
 
 function subtractHP (pokeArray) {
-    var num = Math.floor(Math.round() * pokeArray.length);
+    var num = Math.floor(Math.random() * pokeArray.length);
     var num2 = prompt('How many HP points would you like to take away? ');
     pokeArray[num].HP = pokeArray[num].HP - num2;
+
+    console.log(pokeArray[num].name + ' ' + pokeArray[num].HP)
 };
 
-subtractHP(pokeArray);
+//function createPokemon just prompts the user like 100 times
+//asking name, hp, etc..
+
+function createPokemon(pokeArray) {
+    var newPokeName = prompt('WHat pokemon would you like to add to your roster? ');
+    var newPokeType = prompt('What type(s) is the pokemon? ');
+    var newPokeHP = prompt('What is the HP of the pokemon? ');
+    var newPokeDef = prompt('What is the defense of the pokemon? ');
+    var newPokeAtk = prompt('What is the attack of the pokemon? ');
+    var newPokeLegend = prompt('Is it either true or false that the pokemon is a legendary? ');
+
+    var newPoke = new Pokemon(newPokeName, newPokeType, newPokeHP, newPokeDef, newPokeAtk, newPokeLegend);
+
+    pokeArray.push(newPoke);
+    console.log(pokeArray[6]);
+}
+
+/* function subRandPoke should first generate a
+random number. then it would assign it to one of
+array index. then it would move it to the end of the array
+by using pokeArray[pokearray.length - 1] = pokearray[num]
+and then array.pop() fucntion
+*/
+
+function subRandPoke(pokeArray) {
+    var num = Math.floor(Math.random() * 6)
+    pokeArray[num]
+    pokeArray.splice(num, 1);
+    console.log(pokeArray)
+}
+
+subRandPoke(pokeArray);
