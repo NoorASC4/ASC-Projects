@@ -32,7 +32,7 @@ function draw(){
         rectx -= rectxspd;
     };
 
-    //ballTouchesPaddle();
+    ballTouchesPaddle();
 
 }
 
@@ -49,7 +49,7 @@ function ballMove(){
         yspeed = (-yspeed);
     }    
 }
-/*
+
 function ballTouchesPaddle(){
     rect(rectx, recty - 15, 100, 8);
 
@@ -57,7 +57,7 @@ function ballTouchesPaddle(){
         yspeed = (-yspeed)
     }
 }
-*/
+
 /*
 function key({
     if(keyIsPressed()=== true){
