@@ -32,7 +32,7 @@ function draw(){
         rectx -= rectxspd;
     };
 
-    ballTouchesPaddle();
+    //ballTouchesPaddle();
 
 }
 
@@ -45,11 +45,11 @@ function ballMove(){
     if (xpos >= (width-50) || xpos < 50) {
         xspeed = (-xspeed);
     }
-    if ( ypos <=50) {
+    if ( ypos <=50 || ypos >= (height-25)) {
         yspeed = (-yspeed);
     }    
 }
-
+/*
 function ballTouchesPaddle(){
     rect(rectx, recty - 15, 100, 8);
 
@@ -57,7 +57,7 @@ function ballTouchesPaddle(){
         yspeed = (-yspeed)
     }
 }
-
+*/
 /*
 function key({
     if(keyIsPressed()=== true){
