@@ -1,0 +1,56 @@
+body {
+    overflow: hidden;
+}
+#homeTop{
+     border-bottom: 20px solid white;
+     border-right: 20px solid white;
+     border-left: 20px solid white;
+     background-image: url("skybackground.jpeg");
+     height:300px;
+     width: windowWidth;
+}
+#homeBottom{
+     border-bottom: 20px solid white;
+     border-right: 20px solid white;
+     border-left: 20px solid white;
+     background-image: url("YosemiteNationalPark.jpg");
+     height:500px;
+     width: windowWidth;
+}
+#searchBar {
+    text-align:center;
+    margin-top: 180px;
+    color: black;
+    text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+    font-family: georgia; 
+}
+
+
+#search {
+    opacity: 0.7;
+}
+#search:hover {
+    opacity: 1.0;
+}
+
+#browseParks {
+    text-align: center;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+    margin-top: 100px;
+    font-family: Georgia;
+}
+
+#buttonBrowse {
+    text-align: center;
+    color: black;
+    padding:5px;
+}

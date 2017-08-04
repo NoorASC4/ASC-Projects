@@ -51,7 +51,7 @@ function draw(){
            for (i= 0; i <aliens.length; i ++){
                if (aliens[i] <= q <= aliens[i + 1]) {
                    w = 0;
-                   h = 0;
+           ebay         h = 0;
                }
            }
        }

@@ -1,0 +1,14 @@
+#img1 {
+    top: 0px;
+    left: 0px;
+    height:48%;
+    width:100%;
+    border-bottom: solid thick #ffffff;
+}
+#img2 {
+    top:50%;
+    left: 0px;
+    height: 48%;
+    width:100%;
+    border-top: solid thick #ffffff;
+}
