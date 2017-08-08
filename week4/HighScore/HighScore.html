@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Google Firebase api -->
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script>
+    var config = {
+        apiKey: "AIzaSyCHIPIGzNqJVxcmIBkrkDFC1Hvl0JwC018",
+        authDomain: "firemessage-1d7a4.firebaseapp.com",
+        databaseURL: "https://firemessage-1d7a4.firebaseio.com",
+        projectId: "firemessage-1d7a4",
+        storageBucket: "",
+        messagingSenderId: "508542263903"
+        };
+        firebase.initializeApp(config);
+    </script> 
+
+     <!-- My own Links  -->
+    <link rel="stylesheet" href="style.css">
+    
+    <script src= "sketch.js"></script>
+
+
+     
+   
+
+
+
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Alike+Angular|Asul|Eczar" rel="stylesheet">    
+
+
+
+    
+    <title>High Score</title>
+</head>
+<body>
+    <hr>
+    <button onclick="playRock()" id="Rock">Rock</button>
+    <button onclick="playPaper()" id="Paper">Paper</button>
+    <button onclick="playScissor()" id="Scissor">Scissor</button>
+
+    <hr>
+    <p id="Wins">Wins: 0</p>
+    <p id="Loses">Loses: 0</p>
+    <p id="Ties">Ties: 0</p>
+
+    <hr>
+    <h3>Leaderboard</h3>
+    <ul>
+        <li id="top1">1.</li>
+        <li id="top2">2.</li>
+        <li id="top3">3.</li>
+    </ul>
+</body>
+</html>

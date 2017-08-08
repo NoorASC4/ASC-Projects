@@ -9,9 +9,38 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src= "sketch.js"></script>
+     <!--Reference platform.js library here-->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>   
+     <!--Reference Client ID in meta tag here-->
+    <meta name="google-signin-client_id" content="833959482087-jfroifevllq235i1ldf2cbipogf1alph.apps.googleusercontent.com">
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <title>parkFinder</title>
 </head>
 <body>
+    <div class ="mainContainer">
+        <!--Text greeting user-->
+        <header>
+            <h1>WELCOME <span class="userName">USER_NAME</span></h1>    
+        </header>
+
+        <!--Populate section with user data-->
+        <section>
+            <!--picture-->
+            <div class = "userImg">
+                <img src="assets/placeholder.png">
+            </div>
+
+            <!--User Data-->
+            <div class="userData">
+                <h2>E-MAIL:</h2>
+                <p class="email">example@example.com</p>
+            </div>
+        </section>
+    </div>
+</body>
+
     <div id = "homeTop" class = "row">
         <div id = "searchBar">
              <h1>Search Parks</h1>
@@ -24,6 +53,11 @@
             <a href ="parksList.html"target="_blank"><button id ="buttonBrowse">Browse</button></a>
             <!-- <input id="search" type="text" name="search" placeholder="Search.."> -->
         </div>
+    </div>
+       <!-- sign in button -- >
+    <div class="signs">
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <a href="#" class="signOut" onclick="onSignOut();">Sign out</a>
     </div>
 </body>
 </html>

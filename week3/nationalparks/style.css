@@ -1,5 +1,6 @@
 body {
     overflow: hidden;
+
 }
 #homeTop{
      border-bottom: 20px solid white;
@@ -53,4 +54,61 @@ body {
     text-align: center;
     color: black;
     padding:5px;
+}
+
+.userImg{
+    border: 2px solid blanchedalmond;
+    border-radius: 50%;
+    width:150px;
+    height:150px;
+    padding:4px;
+    margin: 0 auto;
+    background-color: rebeccapurple;
+}
+
+.userImg{
+    border: 2px solid blanchedalmond;
+    border-radius: 50%;
+    width:150px;
+    height:150px;
+    padding:4px;
+    margin: 0 auto;
+    background-color: rebeccapurple;
+
+    /*Rainbow effect taken from https://codepen.io/nohoid/pen/kIfto*/
+    background: linear-gradient(90deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+    animation: rainbow 18s ease infinite;
+}
+
+.g-signin2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.signOut{
+    position: absolute;
+    right: 10px;
+    color:white;
+}
+
+img{
+    border-radius: 50%;
+    width:150px;
+}
+
+.userData{
+    width: 200px;
+    margin: 0 auto;
+}
+
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+.hidden{
+    display: none;
 }
